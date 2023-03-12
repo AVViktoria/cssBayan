@@ -1,1 +1,1 @@
-https://avviktoria.github.io/cssBayan/
+https://avviktoria.github.io/cssBayan
