@@ -1,36 +1,14 @@
 * {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
 }
 body {
-  
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: rgba(210, 216, 239, 0.7);
- font-family: "DM Sans", sans-serif; 
- 
- /* width: 100%;
-  padding-right: 30px;
-  padding-left: 30px;
-
-  margin-right: auto;
-  margin-left: auto; */
+  background-color: rgb(180, 196, 203);
 }
-/* *,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
-
-/* img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
 
 ul,
 ol,
@@ -54,15 +32,3 @@ ul {
 ul {
   padding-left: 0;
 }
-
-
-
-/* .link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-} */
