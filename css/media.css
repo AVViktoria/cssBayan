@@ -15,22 +15,22 @@
     font-size: 25px;
   }
   .tab {
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+  }
   .label {
     font-size: 22px;
   }
-
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   .container {
     padding-bottom: 70px;
     width: 768px;
   }
   .tab {
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+  }
   .title {
-
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 35px;
@@ -38,23 +38,18 @@
   .label {
     font-size: 30px;
   }
-
-  
 }
-
-
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
   .title {
-
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 40px;
   }
-  .label{
+  .label {
     font-size: 35px;
   }
 }

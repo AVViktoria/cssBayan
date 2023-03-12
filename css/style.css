@@ -23,20 +23,23 @@
   border-radius: 50px 50px 0% 0%;
   width: 98%;
   height: 62px;
-
   background: linear-gradient(180deg, #00a396 0%, #008fa3 100%);
 }
 
 .title {
   margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 25px;
+  margin-bottom: 15px;
+  font-size: 25px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  
   line-height: 100%;
   color: rgb(29, 60, 98);
+}
+.title:hover, .title:focus{
+  color: rgb(234 218 203);
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .list {
   margin: 5px;
@@ -64,15 +67,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  
+
   font-weight: 500;
   color: rgb(25, 23, 23);
   cursor: pointer;
 }
-.checkbox:checked ~ label{
-  color:rgb(196, 65, 18);
+.checkbox:checked ~ label {
+  color: rgb(196, 65, 18);
 }
-
 
 .symbol {
   font-size: 25px;
@@ -81,13 +83,13 @@
   opacity: 0;
 }
 
-
-
 .container:hover .symbol {
   opacity: 1;
 }
-
-
+.container:hover .label{
+  transition: all 0.5s ease;
+  color: rgb(196, 65, 18);
+}
 .content-img {
   width: 0;
   height: 0;
@@ -106,16 +108,17 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  transition: all 250ms ease;
-  /* transition: all 0.5s ease; */
-}
+  transition: all 0.5s ease;
 
+}
 
 .checkbox:checked ~ label > .symbol {
   transform: rotate(45deg);
   transition: all 0.5s ease;
+  
 }
 
-
-
-
+/* .checkbox:hover ~ label {
+  
+  
+} */
