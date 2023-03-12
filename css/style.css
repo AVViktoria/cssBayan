@@ -111,6 +111,9 @@
   transition: all 0.5s ease;
 
 }
+.checkbox:active ~ .content .content-img{
+  opacity: 0.5;
+}
 
 .checkbox:checked ~ label > .symbol {
   transform: rotate(45deg);
