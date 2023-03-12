@@ -36,7 +36,8 @@
   line-height: 100%;
   color: rgb(29, 60, 98);
 }
-.title:hover, .title:focus{
+.title:hover,
+.title:focus {
   color: rgb(234 218 203);
   cursor: pointer;
   transition: all 0.5s ease;
@@ -86,7 +87,7 @@
 .container:hover .symbol {
   opacity: 1;
 }
-.container:hover .label{
+.container:hover .label {
   transition: all 0.5s ease;
   color: rgb(196, 65, 18);
 }
@@ -109,19 +110,12 @@
   height: 100%;
   border-radius: 15px;
   transition: all 0.5s ease;
-
 }
-.checkbox:active ~ .content .content-img{
+.checkbox:active ~ .content .content-img {
   opacity: 0.5;
 }
 
 .checkbox:checked ~ label > .symbol {
   transform: rotate(45deg);
   transition: all 0.5s ease;
-  
 }
-
-/* .checkbox:hover ~ label {
-  
-  
-} */
