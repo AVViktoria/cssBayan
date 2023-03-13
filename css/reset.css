@@ -1,0 +1,40 @@
+/*
+===============================
+| Normalize of the project
+===============================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(180, 196, 203);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+}

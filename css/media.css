@@ -1,0 +1,95 @@
+/*
+===============================
+| Media styles of the project
+===============================
+*/
+
+@media (min-width: 320px) {
+  .container {
+    width: 20rem;
+  }
+
+  .title {
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    font-size: 1.6rem;
+  }
+  .tab {
+    margin-bottom: 0.9rem;
+  }
+  .label {
+    font-size: 1.4rem;
+  }
+  .symbol {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .container {
+    padding-bottom: 4.3rem;
+    width: 51.25rem;
+  }
+  .tab {
+    margin-bottom: 0.6rem;
+    padding: 0 1.25rem 1.25rem;
+  }
+  .title {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-size: 2.2rem;
+  }
+  .label {
+    font-size: 1.9rem;
+  }
+  .text {
+    padding: 0.6rem;
+    align-items: flex-end;
+  }
+ 
+  .symbol {
+    font-size: 2.9rem;
+    opacity: 0;
+  }
+}
+
+/**         For hover / Focus media         */
+@media screen and (min-width: 820px) {
+  .title:hover,
+  .title:focus {
+    color: rgb(178 97 21);
+    cursor: pointer;
+    transition: all 0.8s ease;
+  }
+  .container:hover .text {
+    color: rgb(29, 60, 98);
+    transition: all 0.5s ease;
+  }
+
+  .container:hover .symbol {
+    opacity: 1;
+    color: rgb(29, 60, 98);
+  }
+  .checkbox:hover ~ label .content-img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.9rem;
+    transition: all 0.8s ease;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 69rem;
+  }
+  .title {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .label{
+    font-size: 2.2rem;
+  }
+  
+}
