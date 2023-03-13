@@ -4,9 +4,9 @@
 ===============================
 */
 
-@media (min-width: 470px) {
+@media (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
   }
 
   .title {
@@ -25,10 +25,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
   .container {
     padding-bottom: 70px;
-    width: 768px;
+    width: 820px;
   }
   .tab {
     margin-bottom: 30px;
@@ -46,9 +46,37 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+/**         For hover / Focus media         */
+@media screen and (min-width: 820px) {
+  .title:hover,
+  .title:focus {
+    color: rgb(234 218 203);
+    cursor: pointer;
+    transition: all 0.8s ease;
+  }
+  .container:hover .text {
+    color: rgb(196, 65, 18);
+    transition: all 0.5s ease;
+  }
+  .symbol {
+    opacity: 0;
+  }
+
+  .container:hover .symbol {
+    opacity: 1;
+  }
+  .checkbox:hover ~ label .content-img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .container {
-    width: 1200px;
+    width: 1100px;
   }
   .title {
     margin-top: 40px;

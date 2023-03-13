@@ -4,31 +4,13 @@
 ===============================
 */
 
-/*         Container  */
+/**         Container  */
 .container {
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/*        Title  */
-.title-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 50px;
-  border-radius: 50px 50px 0% 0%;
-  width: 98%;
-  height: 62px;
-  background: linear-gradient(180deg, #00a396 0%, #008fa3 100%);
-}
-
+/**        Title  */
 .title {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -40,19 +22,7 @@
   color: rgb(29, 60, 98);
 }
 
-.title:hover,
-.title:focus {
-  color: rgb(234 218 203);
-  cursor: pointer;
-  transition: all 0.8s ease;
-}
-
-/*         Main List styles  */
-.list {
-  margin: 5px;
-  box-shadow: 0 5px 10px #3334;
-}
-
+/**         Main List styles  */
 .tab {
   margin-bottom: 15px;
   padding: 0 20px 20px;
@@ -61,6 +31,7 @@
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
+  box-shadow: 0 5px 10px #3334;
 }
 
 .tab:last-child {
@@ -73,6 +44,10 @@
 
 .label {
   display: flex;
+  flex-direction: column;
+}
+.text {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
@@ -80,13 +55,13 @@
   font-weight: 500;
   color: rgb(25, 23, 23);
   cursor: pointer;
+  width: 100%;
 }
 
 .symbol {
-    font-size: 30px;
+  font-size: 30px;
   color: rgb(31, 31, 51);
   rotate: 180deg;
-  opacity: 0;
 }
 
 .content-img {
@@ -94,46 +69,29 @@
   height: 0;
 }
 
-/*         Special styles  */
+/**         Special styles  */
 .checkbox:checked {
   transition: all 0.8s ease;
 }
 
-.container:hover .label { 
+.checkbox:checked ~ label .text {
   color: rgb(196, 65, 18);
   transition: all 0.6s ease;
 }
 
-.checkbox:checked ~ label {
-  color: rgb(196, 65, 18);
-  transition: all 0.6s ease;
-}
-
-.container:hover .symbol {
-  opacity: 1;
-}
-
-.checkbox:checked ~ label > .symbol {
+.checkbox:checked ~ label .symbol {
   transform: rotate(45deg);
   transition: all 0.5s ease;
 }
 
-.checkbox:hover ~ .content .content-img {
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.8s ease;
-}
-
-.checkbox:checked ~ .content .content-img {
+.checkbox:checked ~ label .content-img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
   transition: all 0.5s ease;
 }
 
-.checkbox:active ~ .content .content-img {
+.checkbox:active ~ label .content-img {
   opacity: 0.5;
   color: rgb(196, 65, 18);
   transition: all 0.5s ease;
