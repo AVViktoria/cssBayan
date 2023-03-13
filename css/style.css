@@ -84,6 +84,7 @@
 .checkbox:checked ~ label .symbol {
   transform: rotate(45deg);
   transition: all 0.5s ease;
+  color: rgb(29, 60, 98);
 }
 
 .checkbox:checked ~ label .content-img {
